@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Our - Learners</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="text-center font-weight-bold">Our Learners Work At</h2>
+      <section class="customer-logos slider">
+        <div class="slide">
+          <i><b style="color: blue">FLIPKART</b></i>
+        </div>
+        <div class="slide"><b style="color: #ff9100">FRESHWORKS</b></div>
+        <div class="slide"><b>JUSPAY</b></div>
+        <div class="slide"><b style="color: red">CHARGEBEE</b></div>
+        <div class="slide">
+          <b>
+            <span style="color: red">Z</span><span style="color: green">O</span
+            ><span style="color: blue">H</span
+            ><span style="color: yellow">O</span></b
+          >
+        </div>
+        <div class="slide"><b style="color: #6ec207">PAYPAL</b></div>
+        <div class="slide"><b style="color: #ffde4d">AMAZON</b></div>
+        <div class="slide">
+          <table style="color: #a04747; font-style: bold">
+            <tr>
+              <td style="border-right: 1px solid black; padding-right: 10px">
+                TCS
+              </td>
+              <td style="font-size: 8px; padding-left: 10px">
+                TATA<br />CONSULTANCY<br />SERVICES
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <p class="copy text-center font-weight-bold">
+      All Rights Reserved &copy; GR NETWORK
+    </p>
+
+    <script>
+      $(document).ready(function () {
+        $(".customer-logos").slick({
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1500,
+          arrows: false,
+          dots: false,
+          pauseOnHover: false,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 4,
+              },
+            },
+            {
+              breakpoint: 520,
+              settings: {
+                slidesToShow: 2,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+  </body>
+</html>
